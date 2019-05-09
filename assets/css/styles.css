@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  
+}
+
+#intro {
+  height:100vh;
+}
+
+#mountains {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  height: 700px;
+}
+
+#mountains li {
+  background-size: cover;
+  flex-basis: 35%;
+  height: 300px;
+}
+
+#mountain1 {
+  background-image: url('../img/mountain1.jpg');
+}
+
+#mountain2 {
+  background-image: url('../img/mountain2.jpg');
+}
+
+#mountain3 {
+  background-image: url('../img/mountain3.jpg');
+}
+
+#mountain4 {
+  background-image: url('../img/mountain4.jpg');
+}
+
+#mountains li.large { 
+  flex-basis: 55%;
+}
+
+#trips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trip {
+  flex: 1 1 200px;
+}
+
