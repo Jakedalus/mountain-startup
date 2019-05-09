@@ -1,6 +1,7 @@
 :root {
   --blue: #2B98F0;
   --offwhite: #F7F7F7;
+  --darkgray: #414A4F;
 }
 
 * {
@@ -180,5 +181,30 @@ input[type="email"] {
   flex-basis: 60%;
   padding: 20px;
   margin-right: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  background: var(--darkgray);
+  color: white;
+}
+
+footer #social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 17%;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+footer p {
+  margin: 0;  
+  text-transform: uppercase;
+  font-size-adjust: 20px;
 }
 
