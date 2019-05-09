@@ -1,4 +1,6 @@
-body {
+
+
+* {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -7,16 +9,67 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0px;
+  
 }
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#logo {
+  font-size: 30px;
+}
+
+#intro {
+  height:100vh;
+  background-image: url('../img/main.jpg');
+  background-size: cover;
+  color: white;
+}
+
+#title {
+  margin-top: 20vh;
+}
+
+h1 {
+  font-size: 90px;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+button {
+  background: #2B98F0;
+  color: white;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
 
 section {
   width: 90%;
   margin: 0 auto;
   
-}
-
-#intro {
-  height:100vh;
 }
 
 #mountains {
