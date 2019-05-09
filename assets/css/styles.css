@@ -71,8 +71,8 @@ button {
 
 section {
 /*  width: 85%;*/
-  margin: 100px auto;
-  padding: 0px 10%;
+  margin: 0 auto;
+  padding: 100px 10%;
 }
 
 section:nth-of-type(2n) {
@@ -92,7 +92,7 @@ p {
   margin-bottom: 150px;
 }
 
-p:after {
+header p:after {
   content: "";
   position: absolute;
   height: 2px;
@@ -144,6 +144,28 @@ p:after {
 }
 
 .trip {
-  flex: 1 1 200px;
+  flex: 1 1 50%;
 }
+
+.fas {
+  color: var(--blue);
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#testimonials p {
+  font-size: 22px;
+}
+
+span {
+  display: block;
+  margin-top: 20px;
+}
+
+
 
