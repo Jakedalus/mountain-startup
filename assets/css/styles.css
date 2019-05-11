@@ -181,7 +181,7 @@ header p:after {
   background-image: url('../img/mountain4.jpg');
 }
 
-
+/* TRIPS SECTION STYLING */
 
 #trips {
   display: flex;
@@ -189,7 +189,7 @@ header p:after {
 }
 
 .trip {
-  flex: 1 1 50%;
+  flex-basis: 50%;
 }
 
 .fas {
@@ -199,18 +199,25 @@ header p:after {
 }
 
 h4 {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin: 20px 0px;
 }
+
+/* TESTIMONIALS SECTION STYLING */
 
 #testimonials p {
   font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 80px;
 }
 
 span {
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
 }
+
+/* CONTACT SECTION STYLING */
 
 form {
   display: flex;
@@ -226,14 +233,19 @@ input[type="email"] {
   padding: 20px;
   margin-right: 20px;
   text-align: justify;
+  font-size: 18px;
+  color: #555;
 }
+
+/* FOOTER STYLING */
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 35vh;
+/*  height: 35vh;*/
+  padding: 60px 0;
   background: var(--darkgray);
   color: white;
 }
@@ -251,39 +263,47 @@ footer p {
   margin: 0;  
   text-transform: uppercase;
   font-size-adjust: 20px;
+  opacity: 0.6;
 }
 
-@media (max-width: 900px) {
+/* MOBILE BREAKPOINTS */
+
+@media (max-width: 1000px) {
   
-  #mountains, #trips, form {
+  #trips, form {
     flex-direction: column;
   }
   
-  #mountains {
-    height: auto;
-    justify-content: space-around;
-  }
-  
-  #mountains li {
-    height: 40vw;
+  #mountains li, #mountains li.large  {
+/*    height: 30vw;*/
     margin-bottom: 40px;
+    flex-basis: 50%;
   }
   
   
   input[type="email"] {
     flex-basis: 100%;
     flex-grow: 1;
-    width: 300px;
+    width: 400px;
     margin-right: 0;
     margin-bottom: 20px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   
   #intro {
     height: 110vh;
   }
+  
+  #hero h1 {
+    font-size: 50px;
+  }
+  
+  #hero h3 {
+    font-size: 18px;
+  }
+  
   
   nav {
     flex-direction: column;
@@ -291,5 +311,20 @@ footer p {
   
   nav div {
     margin: 0 auto;
+  }
+  
+  p {
+    width: 85%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  
+  #mountains {
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
   }
 }
