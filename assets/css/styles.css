@@ -105,6 +105,8 @@ button {
   }
 }
 
+/* GENERAL SECTION STYLES */
+
 section {
 /*  width: 85%;*/
   margin: 0 auto;
@@ -116,7 +118,7 @@ section:nth-of-type(2n) {
 }
 
 h3 {
-  font-size: 30px;
+  font: bold 32px "Open Sans", sans-serif;
   margin-bottom: 50px;
 }
 
@@ -124,7 +126,7 @@ p {
   position: relative;
   width: 60%;
   margin: 0 auto;
-  line-height: 26px;
+  line-height: 2;
   margin-bottom: 150px;
 }
 
@@ -140,18 +142,27 @@ header p:after {
 }
 
 
+/* DESTINATIONS SECTION STYLES */
+
 #mountains {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: space-around;
-  height: 700px;
+/*  justify-content: space-around;*/
+/*  height: 700px;*/
 }
 
 #mountains li {
   background-size: cover;
-  flex-basis: 35%;
+  background-clip: content-box;
+  background-position: center;
+  padding: 20px;
+  flex-basis: 30%;
   height: 300px;
+}
+
+#mountains li.large { 
+  flex-basis: 70%;
 }
 
 #mountain1 {
@@ -170,9 +181,7 @@ header p:after {
   background-image: url('../img/mountain4.jpg');
 }
 
-#mountains li.large { 
-  flex-basis: 55%;
-}
+
 
 #trips {
   display: flex;
